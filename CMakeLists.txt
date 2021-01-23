@@ -4,8 +4,6 @@ project(test_app
 	VERSION 1.7.8)
 
 include(cmake/CPM.cmake)
-include(cmake/add_cpm_module.cmake)
-include(ExternalProject)
 
 ####
 
