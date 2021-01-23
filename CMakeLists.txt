@@ -10,7 +10,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage(
   NAME cpmpckg
   GITHUB_REPOSITORY loopunit/cpmpckg
-  GIT_TAG 3f9b7a914bd99fce0b539dd96afbca624eb0fde6)
+  GIT_TAG 5afe7abc5d22b6ae2504a91bc857b159963f2a88)
 
 CPMAddBaseModule(glslang)
 CPMAddBaseModule(basis_universal)
@@ -23,7 +23,7 @@ CPMAddBaseModule(imgui)
 CPMAddPackage(
   NAME imgui_app_fw
   GITHUB_REPOSITORY loopunit/imgui_app_fw.cpmpckg
-  GIT_TAG fc1de32db22a1257373ed9b97d6ca6817d457491
+  GIT_TAG 10d8b8a189e383f33916bd4c557ea6ca27ca6667
   DOWNLOAD_ONLY true)
 
 CPMAddModule(imgui_app_fw)
