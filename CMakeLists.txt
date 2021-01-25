@@ -8,27 +8,15 @@ include(cmake/CPM.cmake)
 ####
 
 CPMAddPackage(
-  NAME cpmpckg
-  GITHUB_REPOSITORY loopunit/cpmpckg
-  GIT_TAG 5afe7abc5d22b6ae2504a91bc857b159963f2a88)
-
-CPMAddBaseModule(glslang)
-CPMAddBaseModule(basis_universal)
-CPMAddBaseModule(glfw)
-CPMAddBaseModule(framegraph)
-CPMAddBaseModule(imgui)
+  NAME cpmpckg_t0
+  GITHUB_REPOSITORY loopunit/cpmpckg_t0
+  GIT_TAG 0a13162fd171b35ffe3e96b408f06c64cb55a265)
 
 ####
 
-CPMAddPackage(
-  NAME imgui_app_fw
-  GITHUB_REPOSITORY loopunit/imgui_app_fw.cpmpckg
-  GIT_TAG 10d8b8a189e383f33916bd4c557ea6ca27ca6667
-  DOWNLOAD_ONLY true)
+CPMAddT0Module(imgui_app_fw)
 
-CPMAddModule(imgui_app_fw)
-
-####
+#####
 
 file(GLOB example_sources 
 	${CMAKE_CURRENT_LIST_DIR}/src/main.cpp)
@@ -45,4 +33,3 @@ target_include_directories(test_app
 target_link_libraries(test_app
 	PUBLIC
 		cpm_runtime::imgui_app_fw)
-
