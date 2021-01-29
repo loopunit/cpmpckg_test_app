@@ -10,14 +10,14 @@ include(cmake/CPM.cmake)
 CPMAddPackage(
   NAME cpmpckg
   GITHUB_REPOSITORY loopunit/cpmpckg
-  GIT_TAG a2f869a551b5aa00fea1512454cdec7364695cb4
+  GIT_TAG 1b6245fc7aa5041ca185a64b3385fb998a996c3f
   DOWNLOAD_ONLY true)
 
 include(${cpmpckg_SOURCE_DIR}/cmake/add_cpm_module.cmake)
 
 ####
 
-CPMAddBaseModule(imgui_app_fw)
+CPMAddBaseModule(imgui_app)
 
 #####
 
@@ -35,4 +35,4 @@ target_include_directories(test_app
 
 target_link_libraries(test_app
 	PUBLIC
-		cpm_runtime::imgui_app_fw)
+		cpm_runtime::imgui_app)

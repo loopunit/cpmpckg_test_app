@@ -1,9 +1,9 @@
+#include <imgui_console.h>
 #include <imgui_app_fw.h>
 #include <implot.h>
 #include <TextEditor.h>
 #include <ImGuiFileDialog.h>
 #include <imgui_markdown.h>
-#include <imgui_console.h>
 #include <imgui_node_editor.h>
 
 static bool canValidateDialog = false;
