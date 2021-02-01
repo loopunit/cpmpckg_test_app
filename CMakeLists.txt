@@ -10,7 +10,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage(
   NAME cpmpckg
   GITHUB_REPOSITORY loopunit/cpmpckg
-  GIT_TAG 1b6245fc7aa5041ca185a64b3385fb998a996c3f
+  GIT_TAG 2981a075e459f15f47c3d5110733478df862d483
   DOWNLOAD_ONLY true)
 
 include(${cpmpckg_SOURCE_DIR}/cmake/add_cpm_module.cmake)
